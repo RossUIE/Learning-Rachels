@@ -5,7 +5,12 @@
 <link rel="stylesheet" href="css/main.css" type="text/css"/>
 <!--font awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+
 <!--Main JS-->
 <script src="js/main.js"></script>
 </head>
@@ -19,7 +24,7 @@
     <header>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
+            
             <a href="#">About</a>
             <a href="#">The Room</a>
             <a href="#">Pricing</a>
@@ -30,12 +35,12 @@
         <div class="logo">Learning@Rachels</div>
         
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">The Room</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <span class="side" onclick="openNav()">&#9776;</span>
+            
+            <a href="#about">About</a>
+            <a href="#room">The Room</a>
+            <a href="#price">Pricing</a>
+            <a href="#contact">Contact</a>
+            <span class="side" onclick="openNav()"><i class="fas fa-bars" style="color: #fff; padding-top: 8px"></i></span>
         </nav>
     </header>
     
@@ -50,7 +55,7 @@
     
     <div class="welcome-container">
     <div class="welcome-body">
-    <h1>WELCOME!</h1>
+    <h1>I AM HERE TO HELP!</h1>
     <hr/>
         <p>Is your child losing confidence and falling behind at school?</p>
 
@@ -59,15 +64,117 @@
     
         </div>
             <div class="illustrtaion">
-        <img src="images/illustration.png" width="50%">
+<!--        <img src="images/illustrationHills.png" width="100%">-->
+                <svg width="1800px" height="514px" viewBox="0 0 1078 514">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-700.000000, -125.000000)">
+            <g id="hill" transform="translate(700.000000, 239.000000)">
+                <path d="M391.60638,399.045346 C352.082982,356.665881 327.856299,299.528887 327.856299,236.667852 C327.856299,105.959806 432.601838,0 561.812008,0 C691.022178,0 795.767717,105.959806 795.767717,236.667852 C795.767717,299.528887 771.541034,356.665881 732.017636,399.045346 L391.60638,399.045346 Z" id="Combined-Shape" fill="#429B87"></path>
+                <path d="M539.395446,399.045346 C557.502508,266.568407 671.084587,164.500076 808.5,164.500076 C945.915413,164.500076 1059.49749,266.568407 1077.60455,399.045346 L539.395446,399.045346 Z" id="Combined-Shape" fill="#338875"></path>
+                <path d="M0.626206563,399.893363 C43.3086992,229.532883 192.162041,103.793226 369.23622,103.793226 C546.3104,103.793226 695.163742,229.532883 737.846234,399.893363 L0.626206563,399.893363 Z" id="Combined-Shape" fill="#4FB09A"></path>
+            </g>
+            <g id="tree" transform="translate(831.000000, 358.000000)">
+                <ellipse id="Oval-3" fill="#479E8A" cx="30" cy="128.543478" rx="30" ry="17.4565217"></ellipse>
+                <path d="M58.9473684,94.8251039 C58.9473684,111.185821 46.2216745,118.492754 30.5313577,118.492754 C14.8309571,118.492754 2.10526316,111.185821 2.10526316,94.8251039 C2.10526316,78.4654375 14.8309571,0 30.5313577,0 C46.2216745,0 58.9473684,78.4654375 58.9473684,94.8251039" id="Fill-77" fill="#82A93F"></path>
+                <path d="M53.6842105,82.1083725 C53.6842105,72.5432474 49.4418717,41.7732539 42.8514477,17.8299319 C38.9840132,7.26221502 34.5838199,0 29.9172472,0 C14.5560343,0 2.10526316,78.5388092 2.10526316,94.9137733 C2.10526316,95.242009 2.11512906,95.5649845 2.12499497,95.8848039 C7.00861757,102.656769 15.8188701,105.797101 25.8820924,105.797101 C41.2334394,105.797101 53.6842105,98.4833366 53.6842105,82.1083725" id="Fill-78" fill="#A1C83C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="26.3157895 128.014493 33.6842105 128.014493 33.6842105 115.318841 26.3157895 115.318841"></polygon>
+            </g>
+            <g id="tree" transform="translate(912.000000, 313.000000)">
+                <ellipse id="Oval-3" fill="#479E8A" cx="31.5" cy="128.543478" rx="31.5" ry="17.4565217"></ellipse>
+                <path d="M32.0585448,118.69847 C15.5313949,118.69847 2.13559322,111.378852 2.13559322,94.9897308 C2.13559322,78.6016622 15.5313949,0 32.0585448,0 C48.57508,0 61.9708817,78.6016622 61.9708817,94.9897308 C61.9708817,111.378852 48.57508,118.69847 32.0585448,118.69847 Z" id="Fill-77" fill="#C4B93A"></path>
+                <path d="M56.6284452,82.2509218 C56.6284452,72.6691905 52.1464394,41.8457769 45.1836955,17.8608867 C41.0977739,7.27482303 36.4489958,0 31.5187894,0 C15.2897591,0 2.13559322,78.6751613 2.13559322,95.0785541 C2.13559322,95.4073597 2.14601649,95.7308959 2.15643976,96.0512706 C7.31595807,102.834993 16.6239376,105.980777 27.2556723,105.980777 C43.4742793,105.980777 56.6284452,98.6543146 56.6284452,82.2509218" id="Fill-78" fill="#C8A73C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="27.7627119 128.036534 35.2421229 128.036534 35.2421229 115.318841 27.7627119 115.318841"></polygon>
+            </g>
+            <g id="tree" transform="translate(994.000000, 358.000000)">
+                <ellipse id="Oval-3" fill="#479E8A" cx="31.5" cy="128.543478" rx="31.5" ry="17.4565217"></ellipse>
+                <path d="M61.9708817,94.9897308 C61.9708817,111.378852 48.57508,118.69847 32.0585448,118.69847 C15.5313949,118.69847 2.13559322,111.378852 2.13559322,94.9897308 C2.13559322,78.6016622 15.5313949,0 32.0585448,0 C48.57508,0 61.9708817,78.6016622 61.9708817,94.9897308" id="Fill-77" fill="#82A93F"></path>
+                <path d="M56.6284452,82.2509218 C56.6284452,72.6691905 52.1464394,41.8457769 45.1836955,17.8608867 C41.0977739,7.27482303 36.4489958,0 31.5187894,0 C15.2897591,0 2.13559322,78.6751613 2.13559322,95.0785541 C2.13559322,95.4073597 2.14601649,95.7308959 2.15643976,96.0512706 C7.31595807,102.834993 16.6239376,105.980777 27.2556723,105.980777 C43.4742793,105.980777 56.6284452,98.6543146 56.6284452,82.2509218" id="Fill-78" fill="#A1C83C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="27.7627119 128.036534 35.2421229 128.036534 35.2421229 115.318841 27.7627119 115.318841"></polygon>
+            </g>
+            <g id="tree" transform="translate(1507.000000, 386.000000)">
+                <ellipse id="Oval-3" fill="#3E927F" cx="20" cy="90.6847826" rx="20" ry="12.3152174"></ellipse>
+                <path d="M39.2982456,66.8971623 C39.2982456,78.4393123 30.8144496,83.5942029 20.3542384,83.5942029 C9.88730474,83.5942029 1.40350877,78.4393123 1.40350877,66.8971623 C1.40350877,55.3557539 9.88730474,0 20.3542384,0 C30.8144496,0 39.2982456,55.3557539 39.2982456,66.8971623" id="Fill-77" fill="#82A93F"></path>
+                <path d="M35.7894737,57.9257697 C35.7894737,51.1777704 32.9612478,29.4701723 28.5676318,12.5786506 C25.9893421,5.12334347 23.0558799,0 19.9448315,0 C9.70402287,0 1.40350877,55.4075161 1.40350877,66.9597168 C1.40350877,67.1912803 1.41008604,67.4191329 1.41666331,67.6447589 C4.67241171,72.4222415 10.5459134,74.6376812 17.2547283,74.6376812 C27.4889596,74.6376812 35.7894737,69.4779703 35.7894737,57.9257697" id="Fill-78" fill="#A1C83C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="17.5438596 90.3115942 22.4561404 90.3115942 22.4561404 81.3550725 17.5438596 81.3550725"></polygon>
+            </g>
+            <g id="tree" transform="translate(1561.000000, 460.000000)">
+                <ellipse id="Oval-3" fill="#3E927F" cx="20.5" cy="90.6847826" rx="20.5" ry="12.3152174"></ellipse>
+                <path d="M20.8634974,83.7393317 C10.1077332,83.7393317 1.38983051,78.5754917 1.38983051,67.0133033 C1.38983051,55.4518576 10.1077332,0 20.8634974,0 C31.6123536,0 40.3302563,55.4518576 40.3302563,67.0133033 C40.3302563,78.5754917 31.6123536,83.7393317 20.8634974,83.7393317 Z" id="Fill-77" fill="#C4B93A"></path>
+                <path d="M36.8534326,58.0263352 C36.8534326,51.2666207 33.9365717,29.5213358 29.4052621,12.6004885 C26.7461703,5.13223817 23.720775,0 20.512228,0 C9.95047814,0 1.38983051,55.5037097 1.38983051,67.0759663 C1.38983051,67.3079318 1.39661391,67.53618 1.4033973,67.7621977 C4.76117906,72.5479745 10.818753,74.7672605 17.7378185,74.7672605 C28.292785,74.7672605 36.8534326,69.5985918 36.8534326,58.0263352" id="Fill-78" fill="#C8A73C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="18.0677966 90.3271437 22.9353498 90.3271437 22.9353498 81.3550725 18.0677966 81.3550725"></polygon>
+            </g>
+            <g id="tree" transform="translate(1616.000000, 408.000000)">
+                <ellipse id="Oval-3" fill="#3E927F" cx="20.5" cy="90.6847826" rx="20.5" ry="12.3152174"></ellipse>
+                <path d="M40.3302563,67.0133033 C40.3302563,78.5754917 31.6123536,83.7393317 20.8634974,83.7393317 C10.1077332,83.7393317 1.38983051,78.5754917 1.38983051,67.0133033 C1.38983051,55.4518576 10.1077332,0 20.8634974,0 C31.6123536,0 40.3302563,55.4518576 40.3302563,67.0133033" id="Fill-77" fill="#82A93F"></path>
+                <path d="M36.8534326,58.0263352 C36.8534326,51.2666207 33.9365717,29.5213358 29.4052621,12.6004885 C26.7461703,5.13223817 23.720775,0 20.512228,0 C9.95047814,0 1.38983051,55.5037097 1.38983051,67.0759663 C1.38983051,67.3079318 1.39661391,67.53618 1.4033973,67.7621977 C4.76117906,72.5479745 10.818753,74.7672605 17.7378185,74.7672605 C28.292785,74.7672605 36.8534326,69.5985918 36.8534326,58.0263352" id="Fill-78" fill="#A1C83C"></path>
+                <polygon id="Fill-79" fill="#624C27" points="18.0677966 90.3271437 22.9353498 90.3271437 22.9353498 81.3550725 18.0677966 81.3550725"></polygon>
+            </g>
+            <g id="branch" transform="translate(1336.000000, 295.000000)">
+                <ellipse id="Oval-3" fill="#3E927F" cx="18" cy="73.8987342" rx="18" ry="10.1012658"></ellipse>
+                <polygon id="Triangle" fill="#277C68" points="16.4117647 0 28.5882353 56.3544304 4.23529412 56.3544304"></polygon>
+                <rect id="Rectangle" fill="#624C27" x="14.8235294" y="31.8987342" width="3.17647059" height="41.4683544" rx="1.58823529"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(19.588235, 52.632911) rotate(51.000000) translate(-19.588235, -52.632911) " x="18" y="47.8481013" width="3.17647059" height="9.56962025" rx="1.58823529"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(13.235294, 46.253165) rotate(-49.000000) translate(-13.235294, -46.253165) " x="11.6470588" y="42.5316456" width="3.17647059" height="7.44303797" rx="1.58823529"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(18.529412, 43.063291) rotate(51.000000) translate(-18.529412, -43.063291) " x="16.9411765" y="38.278481" width="3.17647059" height="9.56962025" rx="1.58823529"></rect>
+            </g>
+            <g id="branch" transform="translate(1124.000000, 233.000000)">
+                <ellipse id="Oval-3" fill="#3E927F" cx="16" cy="73.9551282" rx="16" ry="9.04487179"></ellipse>
+                <polygon id="Triangle" fill="#277C68" points="15.4666667 0 27.7333333 56.3974359 3.2 56.3974359"></polygon>
+                <rect id="Rectangle" fill="#624C27" x="13.7275362" y="31.9230769" width="3.47826087" height="41.5" rx="1.73913043"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(18.387475, 52.644123) rotate(51.000000) translate(-18.387475, -52.644123) " x="16.996171" y="47.6355026" width="2.7826087" height="10.0172414" rx="1.39130435"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(11.640580, 46.591180) rotate(-49.000000) translate(-11.640580, -46.591180) " x="10.2492754" y="42.6558355" width="2.7826087" height="7.87068966" rx="1.39130435"></rect>
+                <rect id="Rectangle" fill="#624C27" transform="translate(17.691823, 43.342399) rotate(51.000000) translate(-17.691823, -43.342399) " x="16.3005188" y="38.3337784" width="2.7826087" height="10.0172414" rx="1.39130435"></rect>
+            </g>
+            <g id="house" transform="translate(1196.000000, 421.000000)">
+                <rect id="Rectangle-2" fill="#FFA3A3" x="9.57692308" y="79.5112782" width="63.8461538" height="61.4887218"></rect>
+                <polygon id="Triangle-2" fill="#6F595E" points="41.5 40.2857143 83 79.5112782 0 79.5112782"></polygon>
+                <path d="M87.2564103,27.5639098 C83.0084052,26.2670534 79.983077,25.1899679 74.5456866,25.8384333 C73.8660128,23.1725037 67.5789863,23.2445719 63.3311564,24.9017694 C65.5399648,20.9390577 52.4562003,18.8495996 45.8295997,21.0111259 C37.673514,23.604913 42.8146094,26.3919469 46.8490228,26.7750972 C44.8185871,26.7750972 43.1527818,27.1865547 43.1911547,27.5639098 C58.4826764,27.5639098 87.2564103,27.5639098 87.2564103,27.5639098 L46.8490228,23.8533835" id="topCloud" fill="#FFFFFE" transform="translate(64.378205, 23.853383) rotate(-91.000000) translate(-64.378205, -23.853383) "></path>
+                <path d="M91.5128205,26.5037594 C87.2648154,25.5774334 84.2394873,24.8080866 78.8020968,25.2712762 C78.122423,23.3670408 71.8353965,23.4185181 67.5875666,24.6022305 C69.7963751,21.7717222 56.7126105,20.2792521 50.0860099,21.8231995 C41.9299243,23.6759045 47.0710197,25.666643 51.105433,25.9403218 C49.0749974,25.9403218 47.409192,26.23422 47.4475649,26.5037594 C62.7390866,26.5037594 91.5128205,26.5037594 91.5128205,26.5037594 L51.105433,23.8533835" id="topCloud" fill="#FFFFFE" transform="translate(68.634615, 23.853383) scale(-1, 1) rotate(-91.000000) translate(-68.634615, -23.853383) "></path>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="17.025641" y="86.9323308" width="15.9615385" height="15.9022556"></rect>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="46.8205128" y="86.9323308" width="15.9615385" height="15.9022556"></rect>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="17.025641" y="109.195489" width="15.9615385" height="15.9022556"></rect>
+                <rect id="Rectangle-3" fill="#6F595E" x="48.9487179" y="117.676692" width="11.7051282" height="23.3233083"></rect>
+                <rect id="Rectangle-3" fill="#6F595E" x="56.3974359" y="40.2857143" width="17.025641" height="31.8045113"></rect>
+            </g>
+            <g id="clouds" transform="translate(784.000000, -115.000000)" fill="#FFFFFE">
+                <path d="M276.488288,310.910745 C276.488288,299.880935 269.995088,290.938526 261.985589,290.938526 C261.720373,290.938526 261.457597,290.949442 261.19543,290.968754 C257.954317,280.486404 250.406353,273.135996 241.610963,273.135996 C241.182961,273.135996 240.758007,273.158667 240.336101,273.193093 C236.403599,254.288085 223.768381,240.447084 208.777929,240.447084 C193.238146,240.447084 180.228578,255.320031 176.822848,275.289731 C168.957846,278.680289 163.121891,288.374196 162.421967,300.074057 C160.746539,299.400648 158.976608,299.032036 157.14327,299.032036 C150.028186,299.032036 143.837392,304.476409 140.644444,312.503585 L276.438294,312.503585 C276.468169,311.977956 276.488288,311.448129 276.488288,310.910745 Z" id="cloud3"></path>
+            </g>
+            <g id="house" transform="translate(1256.000000, 188.000000)">
+                <rect id="Rectangle-2" fill="#4FB09A" x="4.22857143" y="36.2666667" width="28.5428571" height="27.7333333"></rect>
+                <polygon id="Triangle-2" fill="#6F595E" points="18.5 18.1333333 37 36.2666667 0 36.2666667"></polygon>
+                <path d="M38.0571429,12.8 C36.1923939,12.2407882 34.8643641,11.7763428 32.4775101,12.0559647 C32.1791534,10.9064008 29.4193342,10.937477 27.5546622,11.6520699 C28.524264,9.9433262 22.7808773,9.04234 19.8719951,9.97440243 C16.2917141,11.0928581 18.5485033,12.2946429 20.3194918,12.4598595 C19.4281904,12.4598595 18.696951,12.6372823 18.7137956,12.8 C25.4263225,12.8 38.0571429,12.8 38.0571429,12.8 L20.3194918,11.2" id="topCloud" fill="#FFFFFE" transform="translate(28.014286, 11.200000) rotate(-91.000000) translate(-28.014286, -11.200000) "></path>
+                <path d="M40.1714286,11.7333333 C38.3066797,11.3605254 36.9786498,11.0508952 34.5917958,11.2373098 C34.2934391,10.4709339 31.5336199,10.4916513 29.6689479,10.9680466 C30.6385497,9.82888414 24.895163,9.22822666 21.9862808,9.84960162 C18.4059998,10.5952387 20.662789,11.3964286 22.4337775,11.506573 C21.5424761,11.506573 20.8112367,11.6248549 20.8280813,11.7333333 C27.5406082,11.7333333 40.1714286,11.7333333 40.1714286,11.7333333 L22.4337775,10.6666667" id="topCloud" fill="#FFFFFE" transform="translate(30.128571, 10.666667) scale(-1, 1) rotate(-91.000000) translate(-30.128571, -10.666667) "></path>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="7.4" y="39.4666667" width="7.4" height="7.46666667"></rect>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="21.1428571" y="39.4666667" width="7.4" height="7.46666667"></rect>
+                <rect id="Rectangle-3" fill="#E0EBE8" x="7.4" y="49.0666667" width="7.4" height="7.46666667"></rect>
+                <rect id="Rectangle-3" fill="#6F595E" x="22.2" y="53.3333333" width="5.28571429" height="10.6666667"></rect>
+                <rect id="Rectangle-3" fill="#6F595E" x="25.3714286" y="18.1333333" width="7.4" height="14.9333333"></rect>
+            </g>
+            <g id="car" transform="translate(1562.000000, 582.000000)">
+                <path d="M94.5625,19.7547411 C94.5625,19.7547411 81.0481447,0 76.1386455,0 C71.2291463,0 31.8489208,0 28.1551924,0 C24.4598355,0 21.235152,1.27046459 12.75,20.0961538 L94.5625,19.7547411" id="Fill-114" fill="#76B4E2"></path>
+                <path d="M10.625,35.9615385 L0,35.9615385 L3.34478948,41.25 L10.3973442,41.25 C10.3973442,41.25 8.86265733,38.8835167 10.625,35.9615385" id="Fill-115" fill="#3F4340"></path>
+                <path d="M7.4375,38.0515711 C7.4375,42.1538166 10.6829693,45.4807692 14.6865517,45.4807692 L111.750138,45.4807692 C115.753721,45.4807692 119,42.1538166 119,38.0515711 L119,27.525352 C119,23.4222764 115.753721,20.0961538 111.750138,20.0961538 L14.6865517,20.0961538 C10.6829693,20.0961538 7.4375,23.4222764 7.4375,27.525352 L7.4375,38.0515711" id="Fill-116" fill="#76B4E2"></path>
+                <path d="M87.125,19.7904929 C87.125,19.7904929 74.6805323,2.11538462 71.2905574,2.11538462 C67.8981559,2.11538462 33.1863011,2.11538462 29.9338341,2.11538462 C26.6813671,2.11538462 23.4604461,3.25254024 17,20.0961538 L87.125,19.7904929" id="Fill-117" fill="#D2EDF3"></path>
+                <polygon id="Fill-118" fill="#76B4E2" points="51 20.0961538 54.1875 20.0961538 54.1875 1.05769231 51 1.05769231"></polygon>
+                <path d="M111.993508,20.0961538 L111.382954,20.0961538 C110.827194,21.056213 110.5,22.1918405 110.5,23.4131112 C110.5,26.8388353 113.037711,29.6153846 116.167189,29.6153846 C117.200433,29.6153846 118.16636,29.3079259 119,28.7795079 L119,27.7612115 C119,23.5278729 115.862695,20.0961538 111.993508,20.0961538" id="Fill-119" fill="#ECD631"></path>
+                <path d="M8.15404948,25.3846154 C8.02513601,25.3846154 7.90145761,25.4089849 7.7777792,25.4333544 C7.56183279,26.2190607 7.4375,27.0602286 7.4375,27.9408919 L7.4375,31.5786699 C7.66522531,31.6677447 7.90342076,31.7307692 8.15404948,31.7307692 C9.51843821,31.7307692 10.625,30.3097753 10.625,28.5576923 C10.625,26.8056093 9.51843821,25.3846154 8.15404948,25.3846154" id="Fill-120" fill="#ED3224"></path>
+                <path d="M38.25,45.4815856 C38.25,50.738389 33.969018,55 28.6875,55 C23.4068021,55 19.125,50.738389 19.125,45.4815856 C19.125,40.2231495 23.4068021,35.9615385 28.6875,35.9615385 C33.969018,35.9615385 38.25,40.2231495 38.25,45.4815856" id="Fill-121" fill="#3F4340"></path>
+                <path d="M35.0625,44.4234706 C35.0625,47.3438762 32.6840756,49.7115385 29.7496045,49.7115385 C26.8159244,49.7115385 24.4375,47.3438762 24.4375,44.4234706 C24.4375,41.5022777 26.8159244,39.1346154 29.7496045,39.1346154 C32.6840756,39.1346154 35.0625,41.5022777 35.0625,44.4234706" id="Fill-122" fill="#ADADAD"></path>
+                <path d="M100.9375,45.4815856 C100.9375,50.738389 96.6573381,55 91.375,55 C86.0943021,55 81.8125,50.738389 81.8125,45.4815856 C81.8125,40.2231495 86.0943021,35.9615385 91.375,35.9615385 C96.6573381,35.9615385 100.9375,40.2231495 100.9375,45.4815856" id="Fill-123" fill="#3F4340"></path>
+                <path d="M95.625,44.4234706 C95.625,47.3438762 93.2471895,49.7115385 90.311709,49.7115385 C87.3778105,49.7115385 85,47.3438762 85,44.4234706 C85,41.5022777 87.3778105,39.1346154 90.311709,39.1346154 C93.2471895,39.1346154 95.625,41.5022777 95.625,44.4234706" id="Fill-124" fill="#ADADAD"></path>
+            </g>
+        </g>
+    </g>
+</svg>
         </div>
     </div>
     <!--end of welcome-->
     
-    <div class="about-container">
+    <div class="about-container" id="about">
         <div class="aboutText-container">
             <div class="about-body">
-            <h1>About Me</h1>
+            <div class="aboutImage"></div>
+            <h1>ABOUT ME</h1>
             <hr/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</p>
         </div>
@@ -79,39 +186,45 @@
      <div class="subjectContainer">
         <div class="subject-body">
             <div class="subject-title">
-             <h1>Specialities</h1>
+             <h1>SPECIALITIES</h1>
                 <hr/>
             </div> 
          <div class="subject-area">
             <div class="subject">
+                <div class="subject-content">
                 <div class="circle">
                 <i class="fas fa-book"></i>
                 </div>
-             <h3>Reading Recovery</h3>
+             <h3>READING ROCOVERY</h3>
             <p>I am a trained Reading Recovery Teacher </p>
             </div>
-            <div class="subject">
+            </div>
+            <div class="subject ">
+                <div class="subject-content border">
                 <div class="circle">
                 <i class="fas fa-pencil-alt"></i>
                 </div>
-             <h3>Numbers Count</h3>
+             <h3>NUMBERS COUNTING</h3>
                 <p>I specialise in numbers counting</p>
             </div>
+             </div>
             <div class="subject">
+                <div class="subject-content">
                 <div class="circle">
                 <i class="fas fa-pencil-alt"></i>
                 </div>
-             <h3>Science</h3>
-                <p>Input stuff here</p>
+             <h3>PARENT GUIDENCE</h3>
+                <p>I am able to guide you in order to aid your child</p>
             </div>
+             </div>
         </div>
      </div>   
     </div><!--subject ending-->
     
     
-    <div class="room">
+    <div class="room" id="room">
         <div class="room-title">
-        <h1>The Room...</h1>
+        <h1>THE ROOM</h1>
         <p>Where your child will learn.</p>
         </div>
         <div class="room-body">
@@ -126,13 +239,13 @@
     </div><!--room ending-->
     
     <div class="price-container ">
-        <div class="background">
-    <h1>Pricing...</h1>     
+        <div class="background" id="price">
+    <h1>PRICE STRUCTURE</h1>     
         
         <div class="container">
     <div class="panel pricing-table">
       
-      <div class="pricing-plan">
+      <div class="pricing-plan" id="price">
         <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
         <h2 class="pricing-header">First meeting + assessment</h2>
           <p>Description:</p>
@@ -169,8 +282,8 @@
         
     </div>
     
- <div class="testimonial">
-    <h1>Reviews</h1>
+ <div class="testimonial" id="reviews">
+    <h1>TESTIMONIALS</h1>
    <div class="slider">
   <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
   <input type="radio" name="slider" title="slide2" class="slider__nav"/>
@@ -203,8 +316,8 @@
     
 </div>       
     
-    <div class="social">
-        <h1>Find me on....</h1>
+    <div class="social" id="contact">
+        <h1>FIND ME ON</h1>
         <div class="social-icons">
             <a href=""><i class="fab fa-twitter-square"></i></a>
             <a href="https://www.facebook.com/Learning-at-Rachels-244987459484604/"><i class="fab fa-facebook-square"></i></a>
@@ -212,16 +325,16 @@
         </div>
     </div><!--Social ending-->
     
-    <div class="contact">
+    <div class="contact" >
     <div class="contact-body">
         
         <form action="mailto:r.mcmurray1@hotmail.co.uk" method="post">
             <i class="fas fa-envelope" style="font-size: 36px;"></i>
-        <h1>Get in contact with me..</h1>
+        <h1>CONTACT ME</h1>
                     <label>Name:</label>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" required />
                     <label>Email:</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required  />
                     <label>Phone(optional):</label>
                     <input type="tel" name="phone" />
                     <label>Additional Details:</label>
@@ -234,27 +347,33 @@
     
     <div class="contact-info">
         <div class="contactMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79534.0265353998!2d-2.660756664763971!3d51.46846808908378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1536085658720" width="100%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79534.0265353998!2d-2.660756664763971!3d51.46846808908378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1536085658720" width="100%" height="80%" frameborder="0" style="border:0" scrolling="no" allowfullscreen></iframe>
         <div class="contact-overlay">
         <div class="overlay-title">
-        <h1>How can I help you?</h1>
+        
         </div>
             <div class="overlay-content">
             <div class="contact-items">
+                <div class="contact-items-content">
                 <div class="contact-row-circle"><i class="fas fa-mobile"></i></div>
                 <h3>Phone</h3>
                 <p>0795321610</p>
                 </div>
+                </div>
                 <div class="contact-items">
+                  <div class="contact-items-content">   
                 <div class="contact-row-circle"><i class="fas fa-map-marker-alt"></i></div>
                 <h3>Address</h3>
                 <p>56-58 North St, Bristol BS3 1HJ</p>
                 
                 </div>
+                </div>
                 <div class="contact-items">
+                    <div class="contact-items-content">
                 <div class="contact-row-circle"><i class="fas fa-envelope-open"></i></div>
                 <h3>Email</h3>
                 <p>learningatracchels@hotmail.com</p>
+                </div>
                 </div>
             
             </div>  
@@ -268,12 +387,52 @@
             <a href="https://www.facebook.com/Learning-at-Rachels-244987459484604/"><i class="fab fa-facebook-square"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
         </div>
-        
-    </footer>
-    <div class="copyright">
+        <div class="copyright">
           <h5>Learning@Rachels Copyright 2018</h5>  
         </div>
+    </footer>
+    
 </div><!--container end-->
 </body>
+    
+ <script>
+    
+    
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+        
+    
+    
+    var $car = $('#car');
+//     timelines
+    tlCar = new TimelineMax({ repeat: -1});
+     
+     tlCar.set($car, {x: -100})
+tlCar.to($car,7, {x: 1700,ease: Power0.easeOut });
+    
+    
+    </script>
 
 </html>
