@@ -82,7 +82,7 @@ header {
 }
 
 nav {
-    flex: .25;
+    flex: .55;
     padding: 10px;
     margin-left: auto;
     display: flex;
@@ -214,6 +214,7 @@ hr {
 
 .welcome-body {
     width: 70%;
+    max-width: 1400px;
     margin: auto;
     word-wrap: break-word;
     box-sizing: border-box;
@@ -221,6 +222,7 @@ hr {
     text-align:  center;
     margin-top: 60px;
     color: #fff;
+    
     
 }
 
@@ -233,11 +235,26 @@ p {
     color: #888899;
 }
 
-.illustration img {
+.illustrtaion svg {
     position: absolute;
     bottom: 0;
     left: 0;
 }
+
+.illustrtaion {
+    position: relative;
+}
+
+svg {
+    max-width: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
 
 .welcomeSection {
     display: grid;
@@ -309,6 +326,7 @@ i {
 }
 .about-body {
     width: 70%;
+    
     min-height: 200px;
 }
 
@@ -723,11 +741,15 @@ footer {
     flex-direction: column;
     align-items: center;
     position: relative;
+    
 }
 
+.copyright h5 {
+    margin-bottom: 0;
+}
 .copyright {
     width: 100%;
-    height: 30px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1074,7 +1096,7 @@ input[type="submit"]:hover {
     display: none;
     color: white;
     font-size: 29px;
-    margin-right: 20px;
+   
     cursor: pointer;
 }
 
@@ -1088,8 +1110,12 @@ input[type="submit"]:hover {
 
 .logo {
    padding: 0;
-    margin-left: 10px;
+    
 }
+    
+    nav {
+        flex: 0.30;
+    }
 
 nav a {
     display: none;
@@ -1141,6 +1167,10 @@ nav a {
     width: 100%;
     
 }
+    
+    .border {
+   border: none;
+    }
     
      svg {
         width: 100%;
