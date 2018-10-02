@@ -3,6 +3,10 @@
     src: url('../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 button {
     width: 160px;
     margin: auto;
@@ -21,8 +25,6 @@ body{
     color: #555566;
     width: 100%;
     line-height: 1.6;
-    box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 #container {
@@ -82,7 +84,7 @@ header {
 }
 
 nav {
-    flex: .55;
+   margin-right: 20px;
     padding: 10px;
     margin-left: auto;
     display: flex;
@@ -212,9 +214,13 @@ hr {
     font-size: 1.5rem;
 }
 
+.welcome-container hr {
+    background: #fff;
+}
+
 .welcome-body {
-    width: 70%;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     word-wrap: break-word;
     box-sizing: border-box;
@@ -235,13 +241,13 @@ p {
     color: #888899;
 }
 
-.illustrtaion svg {
+.illustration svg {
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.illustrtaion {
+.illustration {
     position: relative;
 }
 
@@ -254,16 +260,6 @@ svg {
     margin: auto;
 }
 
-
-
-.welcomeSection {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    color: #444;
-    justify-items: center;
-    margin-top: 100px;
-    position: relative; 
-}
 
 .items {  
     display: flex;
@@ -325,8 +321,8 @@ i {
     background-size: cover;
 }
 .about-body {
-    width: 70%;
-    
+    width: 100%;
+    max-width: 1150px;
     min-height: 200px;
 }
 
@@ -375,6 +371,13 @@ i {
     background-size: cover;
 }
 
+.e {
+    background-image: url("../images/room/5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .subjectContainer {
     width: 100%;
     min-height: 300px;
@@ -392,7 +395,8 @@ i {
 }
 
 .subject-body {
-    width: 70%;
+    width: 100%;
+    max-width: 1150px;
     min-width: 800px;
     height: auto;
     margin: auto;
@@ -491,8 +495,8 @@ i {
 }
 
 .contact-overlay {
-    width: 60%;
-    min-width: 800px;
+    width: 100%;
+    max-width: 1150px;
     min-height: 400px;
     margin: auto;
     background: white;
@@ -504,14 +508,10 @@ i {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 0 40px 4px rgba(35, 31, 32, 0.07);
+    
 }
 
-.overlay-title {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    color: #555566;
-}
+
 
 .contact-items {
     width: 33%;
@@ -547,8 +547,8 @@ i {
 }
 
 .contact-body {
-    width: 60%;
-    min-width: 800px;
+    width: 100%;
+    max-width: 1150px;
     min-height: 600px;
     position: relative;
     top: -100;
@@ -595,7 +595,9 @@ ul {
     border-radius: 10px;
     position: relative;
     width: 100%;
+    max-width: 1170px;
     z-index: 10;
+    margin: auto;
 }
 
 .pricing-table {
@@ -714,6 +716,10 @@ ul {
     padding-top: 20px;
 }
 
+.background hr {
+    background: #fff;
+}
+
 .background::after {
   content: '';
   background: #DF8B0D;
@@ -742,6 +748,39 @@ footer {
     align-items: center;
     position: relative;
     
+}
+
+.toTop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/down.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    transform: rotate(180deg);
+    margin: 0 20px 20px;
+    cursor: pointer;
+}
+
+.footerNav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #555566;
 }
 
 .copyright h5 {
@@ -817,7 +856,8 @@ input[type="submit"]:hover {
 
 .room {
     width: 100%;
-    min-height: 1000px;
+    margin: auto;
+    max-width: 1250px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -825,6 +865,7 @@ input[type="submit"]:hover {
     align-items: center;
     border-top: 1px solid #E6ECF8;
     padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .room-title {
@@ -835,6 +876,8 @@ input[type="submit"]:hover {
 
 .room-body {
     min-width: 75%;
+    max-width: 1200px;
+    width: 100%;
     min-height: 600px;
     display: flex;
     flex-wrap: wrap;
@@ -1233,7 +1276,7 @@ form {
     width: 90%;
 }
 
-.illustrtaion img {
+.illustration img {
     width: 100%;
 }
 
