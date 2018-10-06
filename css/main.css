@@ -1295,6 +1295,7 @@ form {
     .reviewContent {
         margin-bottom: 50px;
     }
+    
 
 }
 
@@ -1309,190 +1310,225 @@ form {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .side {
-        display: block;
-        margin-right: 0;
-         font-size: 1rem;
-    }
+.side {
+    display: block;
+    margin-right: 0;
+     font-size: 1rem;
+}
 
-    .side i {
-        font-size: 3rem;
-    }
-    
-    .logo {
-        padding-top: 10px;
-        font-size: 2rem
-    }
-    
-    nav a {
-        display: none;
-    }
-    
-    .title {
-        width: 100%;
-        padding: 5px;
-    }
-    
-    .title h1 {
-        font-size: 6rem;
-    }
-    
-    .title h3 {
-        font-size: 3rem;
-    }
+.side i {
+    font-size: 3rem;
+}
 
-    .title hr {
-        margin-bottom: 20px;
-    }
+.logo {
+    padding-top: 10px;
+    font-size: 2rem
+}
 
-    .title button {
-        width: 130px;
-        height: 40px;
-    }
+nav a {
+    display: none;
+}
 
-    h1 {
-        font-size: 4rem;
-    }
-    
-    .welcome {
-        padding: 0;
-    }
-    
-    .welcome-body {
-        width: 100%;
-       
-    }
-    
-    .welcome-body p {
-        text-align: justify;
-        padding: 25px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    
-    .welcomeSection {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .about-container {
-        flex-direction: column;
-    }
-    
-    .about-body {
-        width: 100%;
-        padding: 50px 0 100px 0;
-    }
-        
-        .border {
-       border: none;
-        }
-        
-         svg {
-            width: 100%;
-             bottom: 0;
-             
-        }
-        
-    .subjectContainer {
-        display: flex;
-        flex-direction: column;
-    }
-        
-        .subject-body {
-                min-width: 60%;
-    
-        }
-    
-    .subject {
-        width: 100%;
-    }
-    
-    .imagesContainer {
-        flex-direction: column;
-        min-height: 100%;
-    }
-    
-    
-    .image {
-        width: 100%;
-    }
-    
-    form {
-        width:90%;
-        padding: 0;
-    }
-    
-    .item {
-        width: 100%;
-        height: 600px;
-    }
+.title {
+    width: 100%;
+    padding: 5px;
+}
 
-    .item:hover {
-        transform: none;
-    }
-    
-    .contact-items {
-        width: 100%;
-    }
-    
-    .contact-body {
-        width: 90%;
-        min-width: 60%;
-    }
-    .pricing-plan {
-        border-bottom: none;
-        border-right: 1px solid #e1f1ff;
-        flex-basis: 60%;
-        padding: 25px 50px;
-        
+.title h1 {
+    font-size: 6rem;
+}
+
+.title h3 {
+    font-size: 3rem;
+}
+
+.title hr {
+    margin-bottom: 20px;
+}
+
+.title button {
+    width: 230px;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.welcome-body {
+    width: 100%;
+
+}
+
+.circle {
+      width: 180px;
+      height: 180px
+  }
+
+  .circle i {
+      font-size: 3rem;
+  }
+
+.welcome-body p {
+    text-align: justify;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.about-container {
+    flex-direction: column;
+}
+
+.about-body {
+    width: 100%;
+    padding: 70px 0 100px 0;
+}
+      
+.aboutImage {
+  width: 200px;
+  height: 200px;
+}
+
+.border {
+   border: none;
+}
+
+svg {
+    width: 100%;
+    bottom: 0;
+}
+
+.subjectContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-body {
+    min-width: 60%;
+    padding-bottom: 100px;
+}
+
+.subject {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.subject h3 {
+  font-size: 35px;
+}
+
+.imagesContainer {
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+.image {
+    width: 100%;
+}
+
+form {
+    width:90%;
+    padding: 0;
+}
+
+.item {
+    width: 100%;
+    height: 600px;
+}
+
+.item:hover {
+    transform: none;
+}
+
+.contact-items {
+    width: 100%;
+}
+
+.contact-body {
+    width: 90%;
+    min-width: 60%;
+}
+.pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 60%;
+    padding: 25px 50px;
+}
+      
+figure.snip {
+  min-width: 500px;
+    max-width: 600px;
+    width: 100%;
+}
+      
+      .snip p {
+          font-size: 30px;
+      }
+      
+      figure.snip h3 {
+          font-size: 40px;
       }
 
-      .pricing-table {
-          flex-direction: column;
-          width: 90%;
-      }
-    
-      .pricing-plan:last-child {
-        border-right: none;
-      }
-    .room-body {
-        width: 90%;
-        margin-bottom: 50px;
-    }
-    .contact-overlay {
-        width: 90%;
-        min-width: 60%;
-    }
-    
-    .subject-body {
-        width: 90%;
-    }
-    
-    .illustration img {
+  .pricing-table {
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+.room-body {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+  .room p {
+      font-size: 30px;
+  }
+.contact-overlay {
+    width: 90%;
+    min-width: 60%;
+}
+
+.subject-body {
+    width: 90%;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+.about-body p {
+    text-align: justify;
+    padding: 25px;
+}
+
+    .columns {
         width: 100%;
     }
-    
-    .about-body p {
-        text-align: justify;
-        padding: 25px;
-    }
-        
-        .columns {
-            width: 100%;
-        }
-        .reviewContent {
-            flex-direction: column;
-         
-        }
+    .reviewContent {
+        flex-direction: column;
 
-        .snip {
-            font-size: 2rem;
-        }
-        
+    }
+      
+      .contact-row-circle {
+          width: 200px;
+          height: 200px;
+      }
+      
+      .contact-row-circle i {
+          font-size: 3rem;
+      }
+      
+      .contact-items h3 {
+          font-size: 35px;
+      }
+      
+       .contact-items p {
+          font-size: 30px;
+      }
 }
 
 
