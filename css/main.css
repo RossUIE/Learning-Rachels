@@ -18,6 +18,7 @@ button {
     color: white;
     border-radius: 160px;
     margin-top: 50px;
+    font-weight: bold;
 }
 
 body{
@@ -49,6 +50,8 @@ body{
     background-size: cover;
     background-attachment: fixed
 }
+
+
 
 .panel img:hover {
   -webkit-transform: rotate(360deg);
@@ -190,13 +193,8 @@ hr {
     height: 50px;
 }
 
-.welcome hr {
-    width: 5%;
-    height: 7px;
-    background: #DF8B0D;
-    border: none;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.welcome-content h1 {
+    color: black;
 }
 
 .welcome-container {
@@ -206,36 +204,104 @@ hr {
     align-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
+/*    background: #DF8B0D;*/
+    padding-top: 100px;
     
-    background: #DF8B0D;
 }
 
 .welcome-container h3 {
     font-size: 1.5rem;
+    color: #888899;
+    margin: 0;
 }
 
-.welcome-container hr {
-    background: #fff;
-}
-
-.welcome-body {
+.welcome-content {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     word-wrap: break-word;
-    box-sizing: border-box;
-    padding:0 100 0 100;
-    text-align:  center;
-    margin-top: 60px;
     color: #fff;
-    
+    padding-bottom: 100px;
+}
+
+.philosiphy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.philosiphy-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+#rachel-image {
+    background-image: url("../images/rachel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcome-text {
+    padding-bottom:50px;
+}
+
+.welcome-right button {
+    width: 160px;
+    height: 50px;
+    border: 2px solid #DF8B0D;
+    background: #DF8B0D;
+    color: white;
+    border-radius: 160px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.welcome-left {
+    min-height: 400px;
+    background: red;
+    width: 50%;
+    float: left;
+   
     
 }
 
-.welcome-body p {
-    color: #fff;
+.backgrounds {
+     background-image: url(../images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcome-about {
+    background-image: url(../images/rachel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 50%;
+    float: left;
+}
+
+.welcome-right {
+    width: 50%;
+    float: right;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    align-content: center;
 }
 
 p {
@@ -290,7 +356,7 @@ i {
 
 .about-container {
     width: 100%;
-    min-height: 300px;
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -304,18 +370,13 @@ i {
 
 .aboutText-container {
     width: 100%;
-    min-height: 700px;
+    min-height: 300px;
     text-align: center;
     align-items: center;
     align-content: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-image: url("../images/landing.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 .about-body {
     width: 100%;
@@ -1301,6 +1362,22 @@ form {
 
     .reviewContent {
         margin-bottom: 50px;
+    }
+    
+    .philosiphy-row {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .welcome-left {
+        width: 90%;
+    }
+    
+    .welcome-right {
+        width: 90%;
     }
     
 
