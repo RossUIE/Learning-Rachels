@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 .title {
-    min-width: 700px;
+    width: 710px;
     min-height: 30vh;
     display: flex;
     justify-content: flex-start;
@@ -583,9 +583,7 @@ ul {
 
 .pricing-features-item {
     border-top: 1px solid #e1f1ff;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 15px 0;
+    font-size: 15px;
     text-align: justify;
     text-transform: none;
 }
@@ -599,32 +597,6 @@ ul {
     display: block;
     font-size: 32px;
     font-weight: 700;
-}
-
-.pricing-button {
-  border: 1px solid #9dd1ff;
-  border-radius: 10px;
-  color: #348EFE;
-  display: inline-block;
-  margin: 25px 0;
-  padding: 15px 35px;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-.pricing-button:hover,
-.pricing-button:focus {
-  background-color: #e1f1ff;
-}
-
-.pricing-button.is-featured {
-  background-color: #48aaff;
-  color: #fff;
-}
-
-.pricing-button.is-featured:hover,
-.pricing-button.is-featured:active {
-  background-color: #DF8B0D;
 }
 
 .background {
@@ -1104,6 +1076,11 @@ input[type="submit"]:hover {
 
 /*end of sidebar*/
 
+
+
+
+
+
 /*start of media query -- 800px */
 @media only screen and (max-width: 800px) {
     
@@ -1117,9 +1094,9 @@ input[type="submit"]:hover {
     
 }
     
-    nav {
-        flex: 0.30;
-    }
+nav {
+    flex: 0.30;
+}
 
 nav a {
     display: none;
@@ -1147,11 +1124,15 @@ nav a {
     padding: 0;
 }
 
-.welcome-body p {
+.welcome-content p {
     text-align: justify;
     padding: 25px;
     padding-top: 0;
     padding-bottom: 0;
+}
+    
+.philosiphy p {
+    text-align: center;
 }
 
 .welcomeSection {
@@ -1359,6 +1340,21 @@ h1 {
     padding-top: 0;
     padding-bottom: 0;
 }
+      
+.welcome-content p {
+    text-align: justify;
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+      
+.welcome-left {
+ 
+}
+      
+.philosiphy p {
+    text-align: center;
+}
 
 .about-container {
     flex-direction: column;
@@ -1523,10 +1519,34 @@ border-right: none;
 
 .welcome-left {
     width: 90%;
+    height: 600px;
 }
 
 .welcome-right {
     width: 90%;
+    min-height: 700px;
+}
+      
+.welcome-right h3 {
+    font-size: 45px;
+}
+
+.welcome-right p {
+    font-size: 40px;
+}
+      
+.welcome-right button {
+  font-size: 30px;
+  width: 300px;
+  height: 70px
+}
+      
+.testimonial {
+  margin: 100 0 100 0
+}
+
+.pricing-header {
+  font-size: 50px;
 }
 }
 
