@@ -18,7 +18,7 @@ body{
     line-height: 1.6;
 }
 
-p {
+body p {
     font-size: 1.2rem;
     color: #888899;
 }
@@ -36,6 +36,10 @@ hr {
     margin-bottom: 2rem;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 button {
     width: 160px;
     margin: auto;
@@ -46,6 +50,9 @@ button {
     border-radius: 160px;
     margin-top: 50px;
     font-weight: bold;
+    font-family: Sassoon, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 
@@ -650,7 +657,6 @@ ul {
 .snip {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     color: #9e9e9e;
-    font-size: 16px;
     margin: 35px 7px 10px;
     min-height: 370px;
     max-width: 310px;
@@ -676,29 +682,34 @@ ul {
   }
   
   .snip figcaption:before {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    color: #DF8B0D;
-    content: "\f10e";
-    font-family: 'FontAwesome';
-    font-size: 32px;
-    font-style: normal;
-    left: 50%;
-    line-height: 60px;
-    position: absolute;
-    top: -30px;
-    width: 60px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: #DF8B0D;
+        content: "\f10e";
+        font-family: 'FontAwesome';
+        font-size: 32px;
+        font-style: normal;
+        left: 50%;
+        line-height: 60px;
+        position: absolute;
+        top: -30px;
+        width: 60px;
   }
   
   .snip h3 {
-    color: #3c3c3c;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    margin: 10px 0 5px;
+        color: #3c3c3c;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 10px 0 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 20px;
   }
   
   .snip h4 {
@@ -947,23 +958,23 @@ label {
 
 input {
       border: 1px solid #e6ecf8;
-      color: #293347;
+      color: #888899;
       box-shadow: none;
       font-weight: 300;
       width: 100%;
       padding: 15px;
       display: block;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
 }
 
 textarea {
       width: 100%;
       border: 1px solid #e6ecf8;
-      color: #293347;
       box-shadow: none;
       font-weight: 300;
       padding: 20px;
       font-size: 1.4rem;
+        color: #888899;
 }
 input[type="submit"] {
     border-radius: 50px;
@@ -1261,7 +1272,10 @@ form {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-      
+    body p {
+    font-size: 1.2rem;
+    color: #888899;
+}  
       
 .sidenav a {
   font-size: 50px;
