@@ -40,6 +40,10 @@ h1 {
     font-size: 40px;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     width: 160px;
     margin: auto;
@@ -54,6 +58,9 @@ button {
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 button:hover {
