@@ -53,6 +53,7 @@ button {
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.0rem;
     cursor: pointer;
+    text-align: center;
 }
 
 
@@ -1339,6 +1340,7 @@ nav a {
 
 .title hr {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .title button {
@@ -1473,6 +1475,15 @@ form {
     padding: 25px 50px;
 }
       
+.pricing-img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.pricing-price {
+margin-bottom: 70px
+}
 figure.snip {
     min-width: 500px;
     max-width: 600px;
