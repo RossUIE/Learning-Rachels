@@ -51,9 +51,14 @@ button {
     margin-top: 50px;
     font-weight: bold;
     font-family: Sassoon, Helvetica, sans-serif;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
+}
+
+button:hover {
+    background-color: white;
+     transition-duration: 0.4s;
 }
 
 
@@ -159,7 +164,6 @@ nav a:hover {
     border: 2px solid #DF8B0D;
     background: transparent;
     color: white;
-    border-radius: 30px;
 }
 
 .title button:hover {
@@ -256,6 +260,11 @@ nav a:hover {
     border-radius: 160px;
     margin: 0;
     font-weight: bold;
+}
+
+.welcome-right button:hover {
+    background: white;
+    color: gray;
 }
 
 .welcome-left {
@@ -1344,9 +1353,9 @@ nav a {
 }
 
 .title button {
-    width: 230px;
-    height: 60px;
-    font-size: 1.2rem;
+    width: 300px;
+    height: 80px;
+    font-size: 1.8rem;
 }
 
 h1 {
