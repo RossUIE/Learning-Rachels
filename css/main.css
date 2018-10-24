@@ -45,9 +45,7 @@ a {
 }
 
 button {
-    width: 160px;
     margin: auto;
-    height: 50px;
     border: 2px solid #DF8B0D;
     background: #DF8B0D;
     color: white;
@@ -56,11 +54,8 @@ button {
     font-weight: bold;
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.2rem;
+    padding: 0 10px;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 button:hover {
@@ -165,9 +160,8 @@ nav a:hover {
 }
 
 .title button {
-    width: 160px;
+    padding: 10px 40px;
     margin: auto;
-    height: 50px;
     border: 2px solid #DF8B0D;
     background: transparent;
     color: white;
@@ -259,8 +253,7 @@ nav a:hover {
 }
 
 .welcome-right button {
-    width: 160px;
-    height: 50px;
+    padding: 10px 40px;
     border: 2px solid #DF8B0D;
     background: #DF8B0D;
     color: white;
@@ -276,7 +269,6 @@ nav a:hover {
 
 .welcome-left {
     min-height: 400px;
-    background: red;
     width: 50%;
     float: left;
 }
