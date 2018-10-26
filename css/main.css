@@ -4,6 +4,33 @@
     font-family: Sassoon;
     src: url('../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
 }
+  @keyframes bounce {
+    
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s 3;
+  }
 
 * {
     box-sizing: border-box;
@@ -41,6 +68,10 @@ h1 {
     font-size: 2.3rem;
 }
 
+h3 {
+    font-size: 1.3rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -48,20 +79,18 @@ a {
 button {
     margin: auto;
     border: 2px solid #DF8B0D;
-    background: #DF8B0D;
+    background: transparent;
     color: white;
-    border-radius: 160px;
-    margin-top: 50px;
-    font-weight: bold;
+    border-radius: 50px;
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 18px;
-    padding: 0 10px;
     cursor: pointer;
+    padding: 10px 40px;
 }
 
 button:hover {
     background-color: white;
-     transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 
@@ -159,13 +188,7 @@ nav a:hover {
     border: none;
 }
 
-.title button {
-    padding: 10px 40px;
-    margin: auto;
-    border: 2px solid #DF8B0D;
-    background: transparent;
-    color: white;
-}
+
 
 .title button:hover {
     background: #DF8B0D;
