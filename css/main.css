@@ -91,6 +91,8 @@ button {
     font-size: 1.1rem;
     cursor: pointer;
     padding: 10px 40px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 button:hover {
