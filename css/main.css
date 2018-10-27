@@ -1319,6 +1319,10 @@ form {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    html,body {
+        -webkit-text-size-adjust: none;
+    }
+
 .sidenav a {
     font-size: 70px;
 }
