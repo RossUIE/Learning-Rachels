@@ -90,9 +90,12 @@ button {
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
-    padding: 10px 40px;
-    display: table-cell;
-    vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    line-height: 17px;
 }
 
 button:hover {
@@ -982,7 +985,7 @@ label {
 }
 
 input {
-      border: 1px solid #888899;
+      border: 1px solid #E0E0E0;
       color: #888899;
       box-shadow: none;
       font-weight: 300;
@@ -1005,7 +1008,7 @@ textarea:focus {
 
 textarea {
       width: 100%;
-      border: 1px solid #888899;
+      border: 1px solid #E0E0E0;
       box-shadow: none;
       font-weight: 300;
       padding: 20px;
@@ -1030,7 +1033,7 @@ input[type="submit"] {
 }
 
 form {
-    width: 60%;
+    width: 50%;
     margin: auto;
     box-sizing: border-box;
 }
