@@ -1320,6 +1320,10 @@ html,body {
     font-size: 20px;
 }
 
+.landing {
+    background-attachment: scroll;
+}
+
 h1 {
     font-size: 30px;
 }
