@@ -769,7 +769,7 @@ ul {
 
 .social {
     width: 100%;
-    min-height: 400px;
+    min-height: 340px;
     background: #DF8B0D;
     display: flex;
     flex-direction: column;
@@ -874,7 +874,6 @@ ul {
 }
 
 .contact-items-content {
-    padding: 0 14px 0 14px;
     box-sizing: border-box;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -1370,10 +1369,11 @@ nav {
 button {
     font-size: 15px;
     padding: 8px 30px;
+    line-height: .95em;
 }
 
 .social i {
-    font-size: 30px;
+    font-size: 38px;
 }
 
 .welcome-body {
@@ -1407,7 +1407,7 @@ button {
 }
 
 .subject {
-    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .imagesContainer {
@@ -1497,10 +1497,20 @@ border-right: none;
 }
       
 .welcome-right button {
-    font-size: 20px;
+    font-size: 17px;
 }
 
-    
+.down {
+  width: 40px;
+  height: 30px;
+}
+
+.toTop {
+  position: relative;
+  margin-top: 20px;
+}
+
+
 
 
 }
