@@ -98,6 +98,7 @@ button {
     padding: 10px 35px;
     font-weight: bold;
     line-height: 20px;
+    box-sizing: content-box;
 }
 
 button:hover {
