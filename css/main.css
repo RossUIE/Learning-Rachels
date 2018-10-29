@@ -1321,6 +1321,10 @@ html,body {
     font-size: 20px;
 }
 
+a {
+    box-sizing: content-box;
+}
+
 .landing {
     background-attachment: scroll;
 }
@@ -1356,6 +1360,7 @@ h3 {
 
 nav a {
     display: none;
+    box-sizing: content-box;
 }
 
 nav {
@@ -1379,7 +1384,7 @@ nav {
 button {
     font-size: 15px;
     padding: 8px 30px;
-    line-height: .95em;
+    box-sizing: content-box;
 }
 
 .social i {
@@ -1508,6 +1513,7 @@ border-right: none;
       
 .welcome-right button {
     font-size: 17px;
+    display: inline-block;
 }
 
 .down {
