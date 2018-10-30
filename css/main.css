@@ -20,7 +20,6 @@ body{
     color: #555566;
     width: 100%;
     line-height: 1.6;
-   
 }
 
 a {
@@ -80,7 +79,7 @@ a {
     }
   }
 
-  .bounce {
+.bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s 3;
@@ -544,6 +543,7 @@ nav a:hover {
 ul {
     list-style: none;
     margin-top: 0;
+
 }
 
 .panel {
@@ -599,7 +599,6 @@ ul {
     border-bottom: none;
     border-right: 1px solid #e1f1ff;
     flex-basis: 100%;
-    padding: 25px 47px;
   }
 
   .pricing-plan:last-child {
@@ -634,6 +633,7 @@ ul {
     border-top: 1px solid #e1f1ff;
     text-align: justify;
     text-transform: none;
+    padding-bottom: 5px;
     
 }
 
@@ -1060,13 +1060,12 @@ input[type="submit"]:hover {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-   box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px   7px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px   7px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    
 }
 
 .sidenav a {
@@ -1124,14 +1123,10 @@ input[type="submit"]:hover {
     display: none;
     color: white;
     font-size: 29px;
-   
     cursor: pointer;
 }
 
 /*end of sidebar*/
-
-
-
 
 
 
@@ -1297,15 +1292,14 @@ form {
     width: 90%;
 }
     
-    .panel {
-        width: 90%;
-    }
-
-
+.panel {
+    width: 90%;
+}
+ul {
+    padding: 0;
 }
 
-
-
+}
 
 
 
@@ -1441,7 +1435,7 @@ form {
     border-bottom: none;
     border-right: 1px solid #e1f1ff;
     flex-basis: 60%;
-    padding: 25px 50px;
+    
 }
 
 figure.snip h3 {
@@ -1517,6 +1511,10 @@ border-right: none;
 .toTop {
   position: relative;
   margin-top: 20px;
+}
+
+ul {
+    padding: 0;
 }
 
 
