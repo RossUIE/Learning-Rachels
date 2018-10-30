@@ -441,28 +441,28 @@ nav a:hover {
 
 .a {
     background-color: #520E24;
-    background-image: url("../images/room/2.jpg");
+    background-image: url("../images/room/1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .b {
     background-color: #520E24;
-    background-image: url("../images/room/3.jpg");
+    background-image: url("../images/room/2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .c {
     background-color: #520E24;
-    background-image: url("../images/room/4.jpg");
+    background-image: url("../images/room/3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .d {
-    background-image: url("../images/room/6.jpg");
+    background-image: url("../images/room/4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,6 +470,13 @@ nav a:hover {
 
 .e {
     background-image: url("../images/room/5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.f {
+    background-image: url("../images/room/6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -566,6 +573,7 @@ ul {
   border-radius: 50%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
+    margin-top: 20px;
 }
 
 .pricing-table {
@@ -634,7 +642,7 @@ ul {
     border-top: 1px solid #e1f1ff;
     text-align: justify;
     text-transform: none;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     
 }
 
@@ -1443,6 +1451,10 @@ form {
     flex-basis: 60%;
     
 }
+.pricing-plan h3 {
+    font-size: 26px;
+}
+
 
 figure.snip h3 {
    
