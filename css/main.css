@@ -160,6 +160,11 @@ nav a {
     align-content: center;  
 }
 
+.active {
+    text-decoration: underline;
+    text-decoration-color:#DF8B0D;
+}
+
 nav a:hover {
   color: #DF8B0D;
 }
@@ -1171,8 +1176,17 @@ input[type="submit"]:hover {
 }
 
 .galleryTitle {
+    width: 710px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-self: center;
     text-align: center;
+    margin: auto;
     color: #fff;
+    padding: 0;
+    word-wrap: break-word;
 }
 
 .galleryTitle h1 {
@@ -1180,6 +1194,7 @@ input[type="submit"]:hover {
     padding: 0;
     margin: 0;
     font-weight: 600;
+    word-wrap: break-word;
 }
 
 .galleryTitle h2 {
@@ -1302,6 +1317,16 @@ nav a {
 
 .title h1 {
     font-size: 55px;
+}
+
+.galleryTitle {
+    width: 100%;
+    padding: 5px;
+    font-size: 55px;
+}
+
+.galleryTitle h1 {
+    font-size: 45px;
 }
 
 .welcome {
@@ -1511,6 +1536,10 @@ nav {
 
 .title h1 {
    font-size: 45px;
+}
+
+.galleryTitle h1 {
+    font-size: 45px;
 }
 
 .title h2 {
