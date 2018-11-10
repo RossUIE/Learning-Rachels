@@ -88,7 +88,7 @@ a {
 button {
     margin: auto;
     border: 2px solid #DF8B0D;
-    background: transparent;
+    background: #DF8B0D;
     color: white;
     border-radius: 50px;
     font-family: Sassoon, Helvetica, sans-serif;
@@ -103,6 +103,7 @@ button {
 button:hover {
     background-color: white;
     transition-duration: 0.4s;
+    color: #555566;
 }
 
 
@@ -512,6 +513,10 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+}
+
+.room button {
+    margin-top: 50px;
 }
 
 .item {
