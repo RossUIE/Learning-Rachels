@@ -170,7 +170,6 @@ nav a:hover {
 }
 
 .title {
-    width: 710px;
     min-height: 30vh;
     display: flex;
     justify-content: flex-start;
