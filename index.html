@@ -23,20 +23,27 @@
     <div class="landing">
         
     <header>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a  class="active" href="index.html">Home</a>
-            <a href="#welcome">About</a>
-            <a href="#about">Programmes</a>
-            <a href="#room">The Room</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="#price">Pricing</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
-        </div> 
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li>Learning@Rachel’s <span>Home Tutoring</span></li>
+            <li><a href="#welcome">About</a></li>
+            <li><a href="#about">Programmes</a></li>
+            <li><a href="#room">The Room</a></li>
+            <li><a href="#price">Pricing</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="hideMenu">close</a></li>
+          </ul>
+        </div>
 
         <nav>
-            <a  class="active" href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="#welcome">About</a>
             <a href="#about">Programmes</a>
             <a href="#room">The Room</a>
@@ -44,7 +51,7 @@
             <a href="#price">Pricing</a>
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
-            <span class="side" onclick="openNav()"><i class="fas fa-bars" style="color: #fff; padding-top: 8px"></i></span>
+            
         </nav>
         
     </header>

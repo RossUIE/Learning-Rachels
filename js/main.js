@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "80%";
+    document.getElementById("sidebarMenu").style.width = "80%";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidebarMenu").style.width = "0";
 }
 
 $(window).scroll(function(){
@@ -17,4 +17,9 @@ $('#map')
 			$(this).find('iframe').addClass('clicked')})
 	.mouseleave(function(){
 			$(this).find('iframe').removeClass('clicked')});
-        
+
+
+
+$(".hideMenu").click(function() {
+	$("#sidebarMenu").removeClass(":checked");
+});
