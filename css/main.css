@@ -289,7 +289,7 @@ nav a {
   .toggle {
     text-decoration: none;
     font-size: 1.7rem;
-    color: #DF8B0D;
+    color: white;
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
@@ -315,6 +315,9 @@ nav a {
     padding: 1.5em;
     background: white; 
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
     
     .sidebar ul {
