@@ -293,12 +293,13 @@ nav a {
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     z-index: 2;
     cursor: pointer;
       transition-duration: 0.2s;
+      visibility: hidden;
     }
     
     .sidebar {
@@ -313,6 +314,7 @@ nav a {
     width: 15rem;
     padding: 1.5em;
     background: white; 
+    z-index: 1;
     }
     
     .sidebar ul {
@@ -1494,7 +1496,7 @@ input[type="submit"]:hover {
 /*start of media query -- 800px */
 @media only screen and (max-width: 800px) {
     
-.sidebarIconToggle {
+    .toggle {
     visibility: visible;
 }
 .side {
