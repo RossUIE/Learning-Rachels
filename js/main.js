@@ -11,3 +11,8 @@ $(window).scroll(function(){
 //250 is fade pixels
 });
 
+$(document).ready(function(){
+	$(".hamburger").click(function(){
+	  $(this).toggleClass("is-active");
+	});
+  });
