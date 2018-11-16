@@ -226,15 +226,15 @@ nav a {
     }
     
     #slide:checked + .container .sidebar {
-    left: 0px;
+        left: 0px;
       transition-duration: 0.2s;
      }
     
     #slide:checked + .container .toggle {
-    left: 350px;
-      transition-duration: 0.2s;
-      position: fixed;
-      color: #DF8B0D;
+        left: 350px;
+        transition-duration: 0.2s;
+        position: fixed;
+        color: #DF8B0D;
       
      }
     
@@ -1567,6 +1567,10 @@ nav a {
     display: none;
     box-sizing: content-box;
 }
+
+#slide:checked + .container .toggle {
+    left: 80%;
+ }
 
 nav {
     flex: none;
