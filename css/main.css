@@ -429,8 +429,15 @@ nav a:hover {
     float: left;
 }
 
-.backgrounds {
-    background-image: url(../images/3.jpg);
+.takeAction {
+    background-image: url(../images/gallery/Rachel_Learning_34.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.support {
+    background-image: url(../images/gallery/Rachel_Learning_58.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
