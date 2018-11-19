@@ -430,14 +430,14 @@ nav a:hover {
 }
 
 .takeAction {
-    background-image: url(../images/gallery/Rachel_Learning_34.jpg);
+    background-image: url(../images/gallery/Rachel_Learning_34Edit.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .support {
-    background-image: url(../images/gallery/Rachel_Learning_58.jpg);
+    background-image: url(../images/gallery/Rachel_Learning_58Edited.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1704,4 +1704,19 @@ ul {
     padding: 0;
 }
 
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .galleryTitle h1 {
+        font-size: 40px;
+    }
+
+    
+#slide:checked + .container .toggle {
+    left: 88%;
+ }
 }
