@@ -32,6 +32,7 @@
     <div class="landing">
         
     <header>
+            <div class="logo"></div>
         <input type="checkbox" id="slide" name="" value="" />
 	<div class="container">
 		<label for="slide" class="toggle">
@@ -52,8 +53,7 @@
                 <li><a href="#contact">Contact</a></li>
 			</ul>
         </div>
-	</div>
-
+    </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="#welcome">About</a>
@@ -62,7 +62,6 @@
             <a href="#price">Pricing</a>
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
-            
         </nav>
         
     </header>
@@ -265,11 +264,11 @@
     <div class="contact" >
     <div class="contact-body">
         
-        <form action="contactForm.php" method="post" class="contact-form">
+        <form action="contactForm.php" method="post" class="contact-form" onsubmit="return formValid()">
         <h1>Contact me</h1>
             <hr/>
                     <label>Name:</label>
-                    <input type="text" name="name" required />
+                    <input type="text" name="name" id="txtName" pattern="/^([^0-9]*)$/" maxlength="50" required />
                     <label>Subject:</label>
                     <input type="text" name="subject" required />
                     <label>Email:</label>
