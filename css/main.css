@@ -266,7 +266,7 @@ nav a {
     -ms-transform: translateY(13px) rotate(45deg);
     -o-transform: translateY(13px) rotate(45deg);
     transform: translateY(3px) rotate(45deg);
-    background: #888899
+    background: orange
 }
 
 #hamburger-1.is-active .line:nth-child(3){
@@ -274,7 +274,7 @@ nav a {
     -ms-transform: translateY(-13px) rotate(-45deg);
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg);
-    background: #888899
+    background: orange
 }
 
 .active {
