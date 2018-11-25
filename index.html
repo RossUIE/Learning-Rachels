@@ -268,18 +268,18 @@
     
     <div class="contact" >
     <div class="contact-body">
-        <form action="contactForm.php" method="post" class="contact-form" onsubmit="return formValid()">
+        <form action="contact-form.php" method="post" class="contact-form" onsubmit="return formValid()">
         <h1>Contact me</h1>
             <hr/>
                     <label>Name:</label>
-                    <input type="text" name="name" id="txtName" pattern="/^([^0-9]*)$/" maxlength="50" required />
+                    <input type="text" name="name" id="txtName" pattern="[A-Za-z]{1,32}" maxlength="50" required />
                     <label>Subject:</label>
                     <input type="text" name="subject" required />
                     <label>Email:</label>
                     <input type="email" name="email" required  />
-                    <label>Phone(optional):</label>
-                    <input type="tel" name="phone" />
-                    <label>Additional Details(optional):</label>
+                    <label>Phone Number (optional):</label>
+                    <input type="tel" name="phone" maxlength="20" pattern="[0-9]{11,20}"/>
+                    <label>Additional Details (optional):</label>
                     <textarea name="message" rows="8" cols="30" name="details"></textarea>
                     <input type="submit" name="submit" value="Submit" />
                 </form>

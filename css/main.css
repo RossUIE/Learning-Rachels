@@ -1121,6 +1121,10 @@ label {
     margin-top: 20px
 }
 
+
+input, textarea, select {
+    font: 400 20px Sassoon, Helvetica, sans-serif;
+}
 input {
       border: 1px solid #E0E0E0;
       color: #888899;
@@ -1129,7 +1133,6 @@ input {
       width: 100%;
       padding: 15px;
       display: block;
-      font-size: 1.1rem;
       border-radius: 10px;
 }
 input:focus { 
@@ -1144,15 +1147,14 @@ textarea:focus {
 }
 
 textarea {
-      width: 100%;
-      border: 1px solid #E0E0E0;
-      box-shadow: none;
-      font-weight: 300;
-      padding: 20px;
-      font-size: 1.1rem;
-        color: #888899;
-        border-radius: 10px;
-        box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    box-shadow: none;
+    font-weight: 300;
+    padding: 15px;
+    color: #888899;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 input[type="submit"] {
     border-radius: 50px;
