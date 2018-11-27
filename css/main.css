@@ -1122,8 +1122,11 @@ label {
 }
 
 
-input, textarea, select {
+input, textarea, select, submit {
     font-family: Sassoon, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1134,8 +1137,7 @@ input {
       padding: 15px;
       display: block;
       border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
+
 }
 input:focus { 
     outline: none !important;
@@ -1157,8 +1159,6 @@ textarea {
     color: #888899;
     border-radius: 10px;
     box-sizing: border-box;
-    font-size: 1.1rem;
-    font-weight: bold;
 }
 input[type="submit"] {
     border-radius: 50px;
@@ -1172,7 +1172,6 @@ input[type="submit"] {
     margin-top: 30px;
     padding: 0;
     font-size: 1.1rem;
-    font-family: Sassoon, Helvetica, sans-serif;
 }
 
 form {
