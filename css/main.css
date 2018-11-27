@@ -4,9 +4,7 @@
     src: url('../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 html {
     font-size: 17px;
@@ -18,7 +16,7 @@ body{
     font-family: Sassoon, Helvetica, sans-serif;
     color: #555566;
     width: 100%;
-    
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
