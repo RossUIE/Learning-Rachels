@@ -1126,8 +1126,8 @@ input, textarea, select, submit {
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
-    line-height: 1;
-    box-sizing: border-box;
+    line-height: 17px;
+    
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1481,6 +1481,10 @@ ul {
 
 html,body {
     font-size: 18px;
+}
+
+input, textarea {
+    line-height: 20px;
 }
 
 a {
