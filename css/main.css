@@ -1123,7 +1123,7 @@ label {
 
 
 input, textarea, select {
-    font: 400 20px Sassoon, Helvetica, sans-serif;
+    font-family: Sassoon, Helvetica, sans-serif;
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1134,6 +1134,8 @@ input {
       padding: 15px;
       display: block;
       border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
 }
 input:focus { 
     outline: none !important;
@@ -1155,6 +1157,8 @@ textarea {
     color: #888899;
     border-radius: 10px;
     box-sizing: border-box;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 input[type="submit"] {
     border-radius: 50px;
