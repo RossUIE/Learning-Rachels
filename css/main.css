@@ -4,7 +4,9 @@
     src: url('../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 17px;
