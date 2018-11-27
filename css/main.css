@@ -1124,9 +1124,10 @@ label {
 
 input, textarea, select, submit {
     font-family: Sassoon, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1;
+    box-sizing: border-box;
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1137,6 +1138,7 @@ input {
       padding: 15px;
       display: block;
       border-radius: 10px;
+      line-height: 30px;
 
 }
 input:focus { 
@@ -1172,6 +1174,7 @@ input[type="submit"] {
     margin-top: 30px;
     padding: 0;
     font-size: 1.1rem;
+    font-family: Sassoon, Helvetica, sans-serif;
 }
 
 form {
