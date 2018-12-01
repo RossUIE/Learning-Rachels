@@ -1106,14 +1106,14 @@ footer i {
 
 /*Form styling*/
 
-
 label {
     font-weight: 400;
     font-size: 1.2rem;
     color: rgba(41, 51, 71, 0.65);
     display: block;
     text-align: left;
-    margin-top: 20px
+    margin-top: 20px;
+    padding-bottom: 3px;
 }
 
 
@@ -1474,11 +1474,11 @@ html,body {
 }
 
 input[type="submit"] {
-    padding:12px 33px 12px 33px;
+    padding:10px 33px 20px 33px;
 }
 
 button {
-    padding: 7px 33px 12px 33px;
+    padding: 4px  33px 12px 33px;
 }
 
 a {
