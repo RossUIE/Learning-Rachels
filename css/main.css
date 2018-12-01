@@ -22,11 +22,6 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-a {
-    vertical-align: middle;
-    display: table-cell;
-}
-
 p {
     font-size: 1.1rem;
     color: #888899;
@@ -94,7 +89,7 @@ button {
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
-    padding: 10px 35px;
+    padding: 6px 33px 13px 33px;
     font-weight: bold;
     line-height: 30px;
     
@@ -1114,7 +1109,7 @@ footer i {
 
 label {
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: rgba(41, 51, 71, 0.65);
     display: block;
     text-align: left;
@@ -1123,11 +1118,9 @@ label {
 
 
 input, textarea, select, submit {
-    font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
-    
-    
+    font-family: arial;
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1138,8 +1131,6 @@ input {
       padding: 15px;
       display: block;
       border-radius: 10px;
-      line-height: 30px;
-
 }
 input:focus { 
     outline: none !important;
@@ -1174,7 +1165,6 @@ input[type="submit"] {
     margin-top: 30px;
     padding: 0;
     font-size: 1.1rem;
-    font-family: Sassoon, Helvetica, sans-serif;
 }
 
 form {
@@ -1486,11 +1476,6 @@ html,body {
 a {
     padding: 0;
     margin: 0;
-}
-
-
-input, textarea {
-    line-height: 40px;
 }
 
 a {
