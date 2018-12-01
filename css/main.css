@@ -89,7 +89,7 @@ button {
     font-family: Sassoon, Helvetica, sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
-    padding: 6px 33px 13px 33px;
+    padding: 10px 35px;
     font-weight: bold;
     line-height: 30px;
     
@@ -1162,8 +1162,9 @@ input[type="submit"] {
     max-width: 160px;
     margin: auto;
     margin-top: 30px;
-    padding: 9px 33px 20px 33px;
-    font-size: 1.1rem;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-family: Sassoon, Helvetica, sans-serif; 
 }
 
 form {
@@ -1470,6 +1471,14 @@ ul {
 
 html,body {
     font-size: 18px;
+}
+
+input[type="submit"] {
+    padding:12px 33px 12px 33px;
+}
+
+button {
+    padding: 7px 33px 12px 33px;
 }
 
 a {
