@@ -150,7 +150,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
-    font-weight: 300;
+    font-weight: 600;
     align-content: center;  
 }
 
@@ -357,7 +357,7 @@ nav a:hover {
 }
 
 .welcome-container h3 {
-    color: #888899;
+    color: #444;
     margin: 0;
 }
 
@@ -1107,7 +1107,7 @@ footer i {
 /*Form styling*/
 
 label {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.2rem;
     color: rgba(41, 51, 71, 0.65);
     display: block;
@@ -1118,9 +1118,8 @@ label {
 
 
 input, textarea, select, submit {
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: arial;
+    font: inherit;
+    font-size: 1.1rem;
 }
 input {
       border: 1px solid #E0E0E0;
@@ -1128,7 +1127,7 @@ input {
       box-shadow: none;
       font-weight: 300;
       width: 100%;
-      padding: 15px;
+      padding: 10px;
       display: block;
       border-radius: 10px;
 }
@@ -1148,7 +1147,7 @@ textarea {
     border: 1px solid #E0E0E0;
     box-shadow: none;
     font-weight: 300;
-    padding: 15px;
+    padding: 10px;
     color: #888899;
     border-radius: 10px;
     box-sizing: border-box;
@@ -1160,9 +1159,9 @@ input[type="submit"] {
     color: #DF8B0D;
     border-width: 2px;
     max-width: 160px;
-    margin: auto;
+    margin-left: auto;
     margin-top: 30px;
-    padding: 15px 35px;
+    padding: 8px 35px;
     font-size: 1.2rem;
     font-family: Sassoon, Helvetica, sans-serif; 
 }
