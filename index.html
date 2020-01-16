@@ -6,7 +6,7 @@
 <!--font awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ygnoLVZdzFNTbhBsvBIkI0pNtqMS6QAu6lPm8N0jsDFBG_Kt3gpu02Xxg50X7hnEtx8zUsxOWaiSAzWiZe5z1FVNb4be9rEngJvitW5-rp9NtHt3clHpKpKicDr4BgwNw6ODbjl2nf6ZQFu8Q5Lk4qMKvn4GDfapqNqAuWEHx-Qey-yDKZ9MWnhN02ZOs5yIZaRmQp-FurYIpJKxAkYjVGTlj4JyInPws278VbustVM" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9uM3BsY3BubDAxNTcucHJvZC5hbXMzLnNlY3VyZXNlcnZlci5uZXQ6MjA4My9jcHNlc3M3NjQwNzY2NDMxL2Rvd25sb2FkP3NraXBlbmNvZGU9MSZmaWxlPSUyZmhvbWUlMmZ4OTBjbHh5djV2cHAlMmZwdWJsaWNfaHRtbCUyZmluZGV4Lmh0bWw"/><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 <!--Main JS-->
 <script src="js/main.js"></script>
 <!-- meta -->
@@ -268,18 +268,18 @@
     
     <div class="contact" >
     <div class="contact-body">
-        <form action="contact-form.php" method="post" class="contact-form" onsubmit="return formValid()">
+        <form action="contactForm.php" method="post" class="contact-form" onsubmit="return formValid()">
         <h1>Contact me</h1>
             <hr/>
                     <label>Name:</label>
-                    <input type="text" name="name" id="txtName" maxlength="50" required />
+                    <input type="text" name="name" id="txtName" pattern="/^([^0-9]*)$/" maxlength="50" required />
                     <label>Subject:</label>
                     <input type="text" name="subject" required />
                     <label>Email:</label>
                     <input type="email" name="email" required  />
-                    <label>Phone Number (optional):</label>
-                    <input type="tel" name="phone" maxlength="20" pattern="[0-9]{11,20}"/>
-                    <label>Additional Details (optional):</label>
+                    <label>Phone(optional):</label>
+                    <input type="tel" name="phone" />
+                    <label>Additional Details(optional):</label>
                     <textarea name="message" rows="8" cols="30" name="details"></textarea>
                     <input type="submit" name="submit" value="Submit" />
                 </form>
